@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MBBSEmu.ELFLoader", "MBBSEmu.ELFLoader\MBBSEmu.ELFLoader.csproj", "{86E9F2DA-B91A-4C52-BA55-5FAF9BEE68DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBBSEmu.ELFLoader.ConsoleApp", "MBBSEmu.ELFLoader.ConsoleApp\MBBSEmu.ELFLoader.ConsoleApp.csproj", "{B6D0A7CF-6831-46B8-AA40-DCBC38A36AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86E9F2DA-B91A-4C52-BA55-5FAF9BEE68DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E9F2DA-B91A-4C52-BA55-5FAF9BEE68DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E9F2DA-B91A-4C52-BA55-5FAF9BEE68DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E9F2DA-B91A-4C52-BA55-5FAF9BEE68DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D0A7CF-6831-46B8-AA40-DCBC38A36AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D0A7CF-6831-46B8-AA40-DCBC38A36AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D0A7CF-6831-46B8-AA40-DCBC38A36AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D0A7CF-6831-46B8-AA40-DCBC38A36AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7F0608B-E126-4D5C-83E1-7DC0AAB0B953}
+	EndGlobalSection
+EndGlobal
