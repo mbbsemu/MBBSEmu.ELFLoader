@@ -73,7 +73,7 @@ namespace MBBSEmu.ELFLoader
         ///     Loads the Segment Data from the provided ELF File Data
         /// </summary>
         /// <param name="fileData"></param>
-        public void LoadDate(ReadOnlySpan<byte> fileData)
+        public void LoadData(ReadOnlySpan<byte> fileData)
         {
             Data = fileData.Slice((int)SH_OFFSET, (int)SH_SIZE).ToArray();
         }

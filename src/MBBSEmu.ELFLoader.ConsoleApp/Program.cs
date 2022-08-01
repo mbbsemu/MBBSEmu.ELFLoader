@@ -11,6 +11,8 @@
             foreach (var s in elf.SectionHeaders)
             {
                 Console.WriteLine($"Loaded Section: {s.Name}");
+                Console.WriteLine($"Flags: {s.SH_FLAGS}");
+                Console.WriteLine("---------");
             }
         }
     }
