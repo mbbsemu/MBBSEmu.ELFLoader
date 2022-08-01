@@ -152,7 +152,7 @@ namespace MBBSEmu.ELFLoader
             {
                 var section = new SectionHeader(fileDataSpan.Slice((int)i, E_SHENTSIZE),
                     EI_CLASS == 1 ? EnumAddressingMode.X86_32 : EnumAddressingMode.X86_64);
-                section.LoadDate(fileDataSpan);
+                section.LoadData(fileDataSpan);
                 SectionHeaders.Add(section);
             }
 
