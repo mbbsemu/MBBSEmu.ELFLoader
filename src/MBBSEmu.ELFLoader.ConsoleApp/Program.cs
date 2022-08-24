@@ -9,7 +9,9 @@ namespace MBBSEmu.ELFLoader.ConsoleApp
         {
             Console.WriteLine("Loading ELF File...");
 
-            var elf = new ELFFile(@"..\..\..\..\..\examples\basic.o");
+            var elf = new ELFFile(@"..\..\..\..\..\examples\test.o");
+
+            Console.WriteLine(elf.ToString());
 
             foreach (var s in elf.SectionHeaders)
             {
@@ -20,7 +22,7 @@ namespace MBBSEmu.ELFLoader.ConsoleApp
                     //Decode the Segment
                     var instructionList = new InstructionList();
                     var codeReader = new ByteArrayCodeReader(s.Data);
-                    var decoder = Decoder.Create(32, codeReader);
+                    var decoder = Decoder.Create(16, codeReader);
                     decoder.IP = 0x0;
 
                     while (decoder.IP < (ulong)s.Data.Length)

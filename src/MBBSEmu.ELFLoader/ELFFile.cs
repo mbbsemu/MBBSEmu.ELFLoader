@@ -183,5 +183,34 @@ namespace MBBSEmu.ELFLoader
 
             return output.ToString();
         }
+
+        /// <summary>
+        ///     Overrides Object.ToString()
+        ///
+        ///     Returns ELF Header Information
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            var output = new StringBuilder();
+            output.AppendLine("ELF Header:");
+            output.AppendLine($"Data: {EI_DATA}");
+            output.AppendLine($"Version: 1");
+            output.AppendLine($"OS/ABI: {EI_OSBI}");
+            output.AppendLine($"ABI Version:  {EI_ABIVERSION}");
+            output.AppendLine($"Type: {E_TYPE.GetDescription()}");
+            output.AppendLine($"Machine: {E_MACHINE}");
+            output.AppendLine($"Entry point address: {E_ENTRY}");
+            output.AppendLine($"Start of program headers: {E_PHOFF} (bytes into file)");
+            output.AppendLine($"Start of section headers: {E_SHOFF} (bytes into file)");
+            output.AppendLine($"Flags: {E_FLAGS}");
+            output.AppendLine($"Size of this header: 52");
+            output.AppendLine($"Size of program headers: {E_PHENTSIZE} (bytes)");
+            output.AppendLine($"Number of program headers: {E_PHNUM}");
+            output.AppendLine($"Size of section headers: {E_SHENTSIZE}");
+            output.AppendLine($"Number of section headers: {E_SHNUM}");
+            output.AppendLine($"Section header string table index: {E_SHSTRNDX}");
+            return output.ToString();
+        }
     }
 }
