@@ -110,6 +110,11 @@ namespace MBBSEmu.ELFLoader
         public byte[] Data { get; set; }
 
         /// <summary>
+        ///     Absolute Offset of Segment within the ELF File it is loaded from
+        /// </summary>
+        public uint AbsoluteOffset { get; set; }
+
+        /// <summary>
         ///     Loads the Segment Data from the provided ELF File Data
         /// </summary>
         /// <param name="fileData"></param>
